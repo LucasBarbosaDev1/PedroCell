@@ -3,12 +3,12 @@ import { provideRouter } from '@angular/router';
 import  { routes } from '../../../app.routes'
 
 @Component({
-  selector: 'app-catalog',
+  selector: 'app-categories',
   imports: [  ],
-  templateUrl: './catalog.component.html',
-  styleUrl: './catalog.component.scss'
+  templateUrl: './categories.component.html',
+  styleUrl: './categories.component.scss'
 })
 
-export class CatalogComponent {
+export class CategoriesComponent {
 }
 
