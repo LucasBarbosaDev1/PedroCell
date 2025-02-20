@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ContentfulService } from '../../../service/contentful.service';
 
 @Component({
   selector: 'app-acessorios-page',
@@ -9,4 +10,19 @@ import { RouterLink } from '@angular/router';
 })
 export class AcessoriosPageComponent {
 
+    constructor(private contentfulService: ContentfulService) {
+      
+      this.contentfulService.getData('acessorios').then(items => {
+  
+        for (let i = 0; i < items.length; i++) {
+          console.log(items[i].fields);
+          
+          
+          
+        }
+        
+      });
+          
+    }
+  
 }
