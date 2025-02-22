@@ -15,6 +15,17 @@
     </div>
 
     <div class="card-items">
+      
+      @for (item of arr; track $index) {
+        <app-card-product
+          [product]="item.product"
+          [description]="item.description"
+          [price]="item.price"
+          [imageProduct]="item.imageProduct"
+          [colorBtn]="colorBtn"
+        ></app-card-product>
+        
+      }
 
     </div>
   </div>

@@ -8,7 +8,7 @@
 
     div{
       background-color: #24B0E8;
-      width: 310px;
+      width: 300px;
       height: 75px;
       border-radius: 0px 50px 50px 0px;
       color: #fff;
@@ -22,6 +22,9 @@
 
   .items{
     padding: .6rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 
     .btn-home{
       width: 60px;
@@ -30,9 +33,24 @@
       border-radius: 10px;
       padding: 8px;
       box-shadow: 0px 0px 8px #0000006c;
+      margin-bottom: 1rem;
+    }
+
+    .card-items{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 
+}
+
+@media (min-width: 600px) {
+  .c-catalog{
+    .items{
+      max-width: 700px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -41,10 +59,18 @@
     .title-catalog{
 
       div{
-        width: 420px;
+        width: 400px;
         height: 100px;
         font-size: 28px;
       }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-catalog{
+    .items{
+      max-width: 900px;
     }
   }
 }

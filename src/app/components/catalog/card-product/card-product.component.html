@@ -1,0 +1,15 @@
+<div class="c-card">
+  <div class="c-image">
+    <img [src]="imageProduct" alt="">
+  </div>
+
+  <div class="card-info">
+    <h2>{{ product }}</h2>
+
+     <p [innerHTML]="description"></p>
+
+    <span>{{ price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}</span>
+
+    <button [style]="{'backgroundColor': colorBtn}">Comprar Agora</button>
+  </div>
+</div>
