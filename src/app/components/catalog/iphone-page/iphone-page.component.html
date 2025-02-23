@@ -26,6 +26,12 @@
         ></app-card-product>
         
       }
+      
+      <div class="noProducts">
+        @if (arr.length === 0) {
+          <p>Não há produtos no momento...</p>
+        }
+      </div>
 
     </div>
   </div>
