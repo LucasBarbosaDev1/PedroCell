@@ -1,22 +1,15 @@
 .social-networks{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: .6rem;
   padding: 2rem 1rem;
-  flex-wrap: wrap;
-
-  .whatsapp-card{
-    width: 100% !important;
-    max-width: 580px !important;
-  }
+  margin: auto;
   
   .social-card{
     background-color: #fff;
-    height: 310px;
+    height: 280px;
     border-radius: 15px;
     text-decoration: none;
-    width: 135px;
     padding: 5px;
 
     .c-img{
@@ -53,12 +46,16 @@
       }
     }
   }
+
+  .whatsapp-card{
+    grid-column: 1/3;
+  }
+
 }
 
 @media (min-width: 375px) {
   .social-networks{
     .social-card{
-      width: 160px;
       padding: 10px;
     }
   }
@@ -66,8 +63,11 @@
 
 @media (min-width: 768px) {
   .social-networks{
+    max-width: 768px;
+
+    padding: 2rem 2rem;
+    gap: 1rem;
     .social-card{
-      width: 260px;
       padding: 20px;
 
       .c-img{
@@ -88,9 +88,12 @@
 @media (min-width: 1024px) {
   .social-networks{
     gap: 1rem;
-    
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     .whatsapp-card{
-      max-width: 500px !important;
+      grid-column: 1/3;
     }
+  
   }
 }
