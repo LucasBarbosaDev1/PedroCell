@@ -10,6 +10,6 @@
 
     <span>{{ price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}</span>
 
-    <button [style]="{'backgroundColor': colorBtn}">Comprar Agora</button>
+    <button [style]="{'backgroundColor': colorBtn}" (click)="messageWhatsapp(product)">Comprar Agora</button>
   </div>
 </div>

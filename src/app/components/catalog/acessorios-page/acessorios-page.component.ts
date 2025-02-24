@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ContentfulService } from '../../../service/contentful.service';
+import { ContentfulService } from '../../../service/APIrequest/contentful.service';
 import { CardProductComponent } from "../card-product/card-product.component";
 
 @Component({
