@@ -1,59 +1,67 @@
-# PedroCell
+<h1 align="center">
+    <img alt="PedroCell" title="PedroCell" src="public/PedroCell.webp" />
+</h1>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+<h3 align="center"> 
+	🚧 Catálogo PedroCell 🚧
+</h3>
 
-## Development server
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-contribuidores">Contribuidores</a> • 
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## 💻 Sobre o projeto
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📄 Catálogo Web da loja e assistência técnica PedroCell. Com frontend desenvolvido em typescript/angular, e backend utilizando o headless CMS ContentFul.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Funcionalidades
 
-```bash
-ng generate component component-name
-```
+- [x] Funcionalidades:
+  - [x] Catálogo Interativo.
+  - [x] Redirecionamento dos produtos de interesse do cliente para o whatsapp do estabelecimento.
+  - [x] Redirecionamento para o google avaliações e google maps.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🛣️ Visualização da aplicação no ar
 
-## Building
+[PedroCell](https://pedrocell.netlify.app/)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🛠 Tecnologias
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-## Running unit tests
+-   **HTML**
+-   **SASS**
+-   **Typescript**
+-   **Angular**
+-   **Headless CMS ContentFul**
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 👨‍💻 Contribuidores
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+<table>
+  <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/lucasbarbosadev1/"><img style="border-radius: 50%;" src="src/assets/perfil.jpg" width="100px;" alt=""/><br /><sub><b>Lucas Barbosa</b></sub></a><br /><a href="https://www.linkedin.com/in/lucasbarbosadev1/" title="Cubos Academy">👨‍💻</a></td>
+  </tr>
+</table>
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+## 📝 Licença
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<!-- Este projeto esta sobe a licença [MIT](./LICENSE). -->
+
+Feito com ❤️ por Lucas Barbosa 👋🏽 [Entre em contato!](https://www.linkedin.com/in/lucasbarbosadev1/)
