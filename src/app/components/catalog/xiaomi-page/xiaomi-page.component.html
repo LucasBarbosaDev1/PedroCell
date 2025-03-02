@@ -15,22 +15,31 @@
     </div>
 
     <div class="card-items">
+      @defer (on timer(2.5s)) {
 
-      @for (item of arr; track $index) {
-        <app-card-product
-          [product]="item.product"
-          [description]="item.description"
-          [price]="item.price"
-          [imageProduct]="item.imageProduct"
-          [colorBtn]="colorBtn"
-        ></app-card-product>        
-      }
-
-      <div class="noProducts">
-        @if (arr.length === 0) {
-          <p>Não há produtos no momento...</p>
+        @for (item of arr; track $index) {
+          <app-card-product
+            [product]="item.product"
+            [description]="item.description"
+            [price]="item.price"
+            [imageProduct]="item.imageProduct"
+            [colorBtn]="colorBtn"
+          ></app-card-product>
+          
         }
-      </div>
+  
+        <div class="noProducts">
+          @if (arr.length === 0) {
+            <p>Não há produtos no momento...</p>
+          }
+        </div>
+
+      } @placeholder {
+
+        <div class="noProducts">
+          <p>Carregando...</p>
+        </div>
+      }
 
     </div>
   </div>
